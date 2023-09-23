@@ -14,10 +14,9 @@ function multiply() {
         if (start) {
             for (let i = 1; i <= inp1.value; i++) {
                 for (let j = 1; j <= inp2.value; j++) {
-                    result.innerText +=
-                        (i + '*' + j + '=' + (i * j));
-                    console.log(i + '*' + j + '=' + (i * j));
-                }
+                    result.innerHTML +=
+                        (i + 'x' + j + '=' + i * j                     + "<br>"); 
+                } 
             }
         }
 }
