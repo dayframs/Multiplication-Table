@@ -14,14 +14,23 @@ h1 {
     font-size: 28px;
     margin: 30px auto ;
 }
-#result {
-    width: 90%;
+#myResult {
+    width: 400px;
     margin: 10px auto;
     border: 3px solid rgb(127, 255, 212);
     height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-
+}
+table {
+    border-collapse: collapse;
+    /* display: flex;
+    justify-content: center; */
+}
+td {
+    border: 1px solid blue;
+    width: 20px;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
 }
 input {
     width: 120px;

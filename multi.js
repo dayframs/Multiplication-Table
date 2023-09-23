@@ -1,9 +1,9 @@
 function multiply() {
     i = inp1.value;
     j = inp2.value;
-    k = result.innerText;
+    k = result.innerHTML;
     l = true;
-    result.innerText = '';
+    result.innerHTML = '';
     start = false;
 
     if (i && j) {
@@ -11,15 +11,17 @@ function multiply() {
     } else { alert('Fill in your numbers') }
     
 
-        if (start) {
-            for (let i = 1; i <= inp1.value; i++) {
-                for (let j = 1; j <= inp2.value; j++) {
-                    result.innerHTML +=
-                        (i + 'x' + j + '=' + i * j                     + "<br>"); 
-                } 
-            }
+    if (start) {
+        for (let i = 1; i <= inp1.value; i++) {
+            result.innerHTML += "<th> <br>";
+            for (let j = 1; j <= inp2.value; j++) {
+                result.innerHTML += "<td>"
+                    + i + 'x' + j + '=' + i * j + "</td>";
+            } result.innerHTML += "</th>";
         }
+    }
 }
+
 function reset() {
     inp1.value = '';
     inp2.value = '';
