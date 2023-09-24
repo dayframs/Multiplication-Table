@@ -12,13 +12,17 @@ function multiply() {
     
 
     if (start) {
+        let t = "<table>";
         for (let i = 1; i <= inp1.value; i++) {
-            result.innerHTML += "<th> <br>";
+            t += "<tr>";
             for (let j = 1; j <= inp2.value; j++) {
-                result.innerHTML += "<td>"
+                t += "<td>"
                     + i + 'x' + j + '=' + i * j + "</td>";
-            } result.innerHTML += "</th>";
+            }
+            t += "</tr>";
         }
+        t += "</table>";
+        result.innerHTML = t;
     }
 }
 
